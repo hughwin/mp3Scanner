@@ -3,6 +3,9 @@ package com.hughwin;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-	// write your code here
+	for (String x : args){
+	    System.out.println(x);
+	    System.out.println("Process completed");
+    }
     }
 }
