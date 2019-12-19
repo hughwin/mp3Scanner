@@ -1,5 +1,7 @@
 package com.hughwin;
 
+import com.mpatric.mp3agic.Mp3File;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.DirectoryStream;
@@ -13,7 +15,6 @@ import static java.nio.file.Files.notExists;
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        System.out.println(args.length);
         if (args.length == 0) {
             throw new IllegalArgumentException("Please specify a file");
         }
@@ -27,7 +28,10 @@ public class Main {
         System.out.println("File found!");
         try (DirectoryStream<Path> stream =  newDirectoryStream(path, "*.mp3")){
             for (Path entry : stream){
-                System.out.println(entry.getFileName());
+                System.out.println(entry.getFileName() + " is an MP3");
+                Mp3File mp3File = new Mp3File(entry);
+                System.out.println(mp3File.getLengthInMilliseconds());
+                System.out.println(mp3File.getId3v2Tag().getArtist());
             }
         }catch (IOException x){
             System.err.println();
@@ -35,7 +39,9 @@ public class Main {
 
 
     }
-    
+
+
+
     public static class Song {
 
         private final String artist;

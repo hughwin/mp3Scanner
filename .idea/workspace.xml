@@ -7,6 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55e3de01-ea6c-4cd8-8d21-e82d2c87069d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mp3Scanner_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mp3Scanner_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mp3Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mp3Scanner.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/mp3Scanner_jar/mp3Scanner.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/META-INF/mp3Scanner.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/com/hughwin/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hughwin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hughwin/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +44,8 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
@@ -84,14 +91,18 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="458" y="228" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576768894849">
+    <state x="458" y="228" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1576783367340">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="228" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576768894849" />
+    <state x="458" y="228" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1576783367340" />
     <state x="558" y="127" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1576776236919">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="558" y="127" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1576776236919" />
+    <state x="458" y="198" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1576778211227">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="198" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1440.900@0.0.1440.900" timestamp="1576778211227" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576775353460">
       <screen x="0" y="23" width="1440" height="827" />
     </state>
@@ -112,10 +123,14 @@
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576773709658" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1576775353460" />
-    <state x="208" y="23" width="1024" height="827" key="SettingsEditor" timestamp="1576776240680">
+    <state x="208" y="23" width="1024" height="827" key="SettingsEditor" timestamp="1576783381696">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="23" width="1024" height="827" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576776240680" />
+    <state x="208" y="23" width="1024" height="827" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1576783381696" />
+    <state x="507" y="312" key="classpath-attribute-editor" timestamp="1576778197241">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="507" y="312" key="classpath-attribute-editor/0.0.1440.900@0.0.1440.900" timestamp="1576778197241" />
     <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576775868321">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

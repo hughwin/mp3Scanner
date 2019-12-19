@@ -3,6 +3,8 @@
     <output-path>$PROJECT_DIR$/out/artifacts/mp3Scanner_jar</output-path>
     <root id="archive" name="mp3Scanner.jar">
       <element id="module-output" name="mp3Scanner" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/mp3agic-0.9.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="com.mpatric:mp3agic:0.9.1" />
     </root>
   </artifact>
 </component>
