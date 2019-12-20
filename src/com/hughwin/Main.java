@@ -4,9 +4,13 @@ import com.mpatric.mp3agic.Mp3File;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.ConnectException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.util.ArrayList;
 
 import static java.nio.file.Files.newDirectoryStream;
 import static java.nio.file.Files.notExists;
@@ -14,62 +18,44 @@ import static java.nio.file.Files.notExists;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         if (args.length == 0) {
             throw new IllegalArgumentException("Please specify a file");
         }
-        if (args.length > 1){
+        if (args.length > 1) {
             throw new IllegalArgumentException(("You have specified too many files"));
         }
         Path path = Paths.get(args[0]);
-        if (notExists(path)){
+        if (notExists(path)) {
             throw new FileNotFoundException("File not found at " + path);
         }
         System.out.println("File found!");
-        try (DirectoryStream<Path> stream =  newDirectoryStream(path, "*.mp3")){
-            for (Path entry : stream){
+
+        ArrayList<Song> repertoire = new ArrayList<Song>();
+
+        try (DirectoryStream<Path> stream = newDirectoryStream(path, "*.mp3")) {
+            for (Path entry : stream) {
                 System.out.println(entry.getFileName() + " is an MP3");
                 Mp3File mp3File = new Mp3File(entry);
                 System.out.println(mp3File.getLengthInMilliseconds());
                 System.out.println(mp3File.getId3v2Tag().getArtist());
+                repertoire.add(new Song(mp3File.getId3v2Tag().getArtist(), mp3File.getId3v2Tag().getYear(), mp3File.getId3v2Tag().getYear(), mp3File.getId3v2Tag().getTitle()));
             }
-        }catch (IOException x){
+        } catch (IOException x) {
+            System.err.println();
+        }
+        try (Connection conn = DriverManager.getConnection("jdbc:h2:~/mydatabase;AUTO_SERVER=TRUE;INIT=runscript from './create.sql'")) {
+
+        }catch (Exception e){
             System.err.println();
         }
 
 
     }
-
-
-
-    public static class Song {
-
-        private final String artist;
-        private final String year;
-        private final String album;
-        private final String title;
-
-        public Song(String artist, String year, String album, String title) {
-            this.artist = artist;
-            this.year = year;
-            this.album = album;
-            this.title = title;
-        }
-
-        public String getArtist() {
-            return artist;
-        }
-
-        public String getYear() {
-            return year;
-        }
-
-        public String getAlbum() {
-            return album;
-        }
-
-        public String getTitle() {
-            return title;
-        }
-    }
 }
+
+
+
+
+
+

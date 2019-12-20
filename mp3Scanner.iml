@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="com.mpatric:mp3agic:0.9.1" level="project" />
+    <orderEntry type="library" name="h2-1.4.200" level="project" />
   </component>
 </module>
