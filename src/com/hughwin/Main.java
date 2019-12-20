@@ -19,13 +19,13 @@ import static java.nio.file.Files.notExists;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-//        if (args.length == 0) {
-//            throw new IllegalArgumentException("Please specify a file");
-//        }
-//        if (args.length > 1) {
-//            throw new IllegalArgumentException(("You have specified too many files"));
-//        }
-        Path path = Paths.get("/Users/amanawinchester/MP3TestFolder");
+        if (args.length == 0) {
+            throw new IllegalArgumentException("Please specify a file");
+        }
+        if (args.length > 1) {
+            throw new IllegalArgumentException(("You have specified too many files"));
+        }
+        Path path = Paths.get(args[0]); //args[0]
         if (notExists(path)) {
             throw new FileNotFoundException("File not found at " + path);
         }
@@ -48,7 +48,7 @@ public class Main {
 
         try {
             Class.forName("org.h2.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:h2:~/mydatabase;AUTO_SERVER=TRUE;INIT=runscript from './create.sql'");
+            Connection conn = DriverManager.getConnection("jdbc:h2:~/mydatabase;AUTO_SERVER=TRUE;INIT=runscript from '/Users/amanawinchester/mp3Scanner/create.sql'");
             PreparedStatement st = conn.prepareStatement("insert into SONGS (artist, year, album, title) values (?, ?, ?, ?);");
 
             for (Song song : repertoire) {
