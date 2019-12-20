@@ -4,7 +4,6 @@ import com.mpatric.mp3agic.Mp3File;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.ConnectException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -45,9 +44,11 @@ public class Main {
             System.err.println();
         }
         try (Connection conn = DriverManager.getConnection("jdbc:h2:~/mydatabase;AUTO_SERVER=TRUE;INIT=runscript from './create.sql'")) {
-
-        }catch (Exception e){
+        } catch (Exception e) {
             System.err.println();
+        }
+        for (Song song : repertoire){
+
         }
 
 

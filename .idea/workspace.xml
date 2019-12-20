@@ -7,13 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55e3de01-ea6c-4cd8-8d21-e82d2c87069d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/h2_1_4_200.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/hughwin/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mp3Scanner_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mp3Scanner_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp3Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mp3Scanner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mp3Scanner_jar/mp3Scanner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mp3Scanner_jar/mp3Scanner.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/com/hughwin/Main$Song.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/com/hughwin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mp3Scanner/com/hughwin/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hughwin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hughwin/Main.java" afterDir="false" />
     </list>
@@ -104,25 +99,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="198" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1440.900@0.0.1440.900" timestamp="1576778211227" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576795936969">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1576838191369">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576795936969" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1576838191369" />
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.827@0.23.1440.827" timestamp="1576775353460" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576795936968">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1576838191366">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576795936968" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1576838191366" />
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.827@0.23.1440.827" timestamp="1576775353459" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576795936967">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1576838191364">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576795936967" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1576838191364" />
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.827@0.23.1440.827" timestamp="1576775353459" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576795936969">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1576838191367">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576795936969" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1576838191367" />
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.827@0.23.1440.827" timestamp="1576775353460" />
     <state x="208" y="23" width="1024" height="827" key="SettingsEditor" timestamp="1576836424683">
       <screen x="0" y="0" width="1440" height="900" />
