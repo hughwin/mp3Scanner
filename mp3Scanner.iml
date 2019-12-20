@@ -8,6 +8,15 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="com.mpatric:mp3agic:0.9.1" level="project" />
-    <orderEntry type="library" name="h2-1.4.200" level="project" />
+    <orderEntry type="library" exported="" name="com.h2database:h2:1.4.185" level="project" />
+    <orderEntry type="module-library" exported="" scope="RUNTIME">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/h2/bin/h2-1.4.200.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

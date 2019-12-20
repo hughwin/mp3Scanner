@@ -9,6 +9,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import static java.nio.file.Files.newDirectoryStream;
@@ -16,15 +18,14 @@ import static java.nio.file.Files.notExists;
 
 
 public class Main {
-
     public static void main(String[] args) throws Exception {
-        if (args.length == 0) {
-            throw new IllegalArgumentException("Please specify a file");
-        }
-        if (args.length > 1) {
-            throw new IllegalArgumentException(("You have specified too many files"));
-        }
-        Path path = Paths.get(args[0]);
+//        if (args.length == 0) {
+//            throw new IllegalArgumentException("Please specify a file");
+//        }
+//        if (args.length > 1) {
+//            throw new IllegalArgumentException(("You have specified too many files"));
+//        }
+        Path path = Paths.get("/Users/amanawinchester/MP3TestFolder");
         if (notExists(path)) {
             throw new FileNotFoundException("File not found at " + path);
         }
@@ -43,16 +44,32 @@ public class Main {
         } catch (IOException x) {
             System.err.println();
         }
-        try (Connection conn = DriverManager.getConnection("jdbc:h2:~/mydatabase;AUTO_SERVER=TRUE;INIT=runscript from './create.sql'")) {
-        } catch (Exception e) {
-            System.err.println();
-        }
-        for (Song song : repertoire){
 
-        }
 
+        try {
+            Class.forName("org.h2.Driver");
+            Connection conn = DriverManager.getConnection("jdbc:h2:~/mydatabase;AUTO_SERVER=TRUE;INIT=runscript from './create.sql'");
+            PreparedStatement st = conn.prepareStatement("insert into SONGS (artist, year, album, title) values (?, ?, ?, ?);");
+
+            for (Song song : repertoire) {
+                st.setString(1, song.getArtist());
+                st.setString(2, song.getYear());
+                st.setString(3, song.getAlbum());
+                st.setString(4, song.getTitle());
+                st.addBatch();
+            }
+
+            int[] updates = st.executeBatch();
+            System.out.println("Inserted [=" + updates.length + "] records into the database");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
+
+
 }
 
 
