@@ -7,12 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55e3de01-ea6c-4cd8-8d21-e82d2c87069d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/mp3Scanner_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/mp3Scanner_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mp3Scanner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mp3Scanner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/mp3Scanner_jar/mp3Scanner.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/mp3Scanner_jar/mp3Scanner.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mp3Scanner/com/hughwin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mp3Scanner/com/hughwin/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/hughwin/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/hughwin/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,10 +126,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="312" key="classpath-attribute-editor/0.0.1440.900@0.0.1440.900" timestamp="1576778197241" />
-    <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576842825728">
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1576942265029">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="413" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576842825728" />
+    <state x="413" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1576942265029" />
     <state x="446" y="337" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576842057280">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

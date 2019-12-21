@@ -16,6 +16,12 @@ import java.util.ArrayList;
 import static java.nio.file.Files.newDirectoryStream;
 import static java.nio.file.Files.notExists;
 
+/*
+Takes an argument in the form of a directory, and scans that directory for MP3 files.
+As the program is doing this, it removes the MP3's metadata from it and creates a new
+Song object. The collected Song objects in the ArrayList repertoire are then added to a
+database in a executeBatch() function, and the database updated accordingly. 
+ */
 
 public class Main {
     public static void main(String[] args) throws Exception {
